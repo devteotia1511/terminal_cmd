@@ -9,23 +9,28 @@
 <body class="light-theme"> 
 
   <header>
-    <h1 class="logo">CMD_PREVIEW</h1>
-    <div class="hamburger" id="hamburger">&#8942;</div>
-
+    <div class="header-left">
+      <h1 class="logo">CMD_PREVIEW</h1>
+    </div>
+  
+    <div class="header-right">
+      <div class="hamburger" id="hamburger" style="color: rgb(144, 16, 4)">&#9776;</div>
+  
+      <div class="theme-switch-wrapper">
+        <label>🌓</label>
+        <label class="theme-switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  
+    <!-- Nav Bar -->
     <nav id="nav-links">
       <a href="https://git-scm.com/docs" target="_blank">Git Docs</a>
       <a href="https://learn.microsoft.com/en-us/windows/terminal/" target="_blank">Terminal Guide</a>
       <a href="https://docs.github.com/en" target="_blank">GitHub Docs</a>
     </nav>
-  
-    <!-- Theme Toggle -->
-    <div class="theme-switch-wrapper">
-      <label>🌓</label>
-      <label class="theme-switch">
-        <input type="checkbox" id="theme-toggle">
-        <span class="slider"></span>
-      </label>
-    </div>
   </header>
 
   <main>
