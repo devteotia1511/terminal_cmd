@@ -18,8 +18,6 @@ function renderMarkdown(file, elementId) {
   // DOM Ready actions
   document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('theme-toggle');
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
   
     // Set initial theme (light by default)
     document.body.classList.add('light-theme');
@@ -31,10 +29,5 @@ function renderMarkdown(file, elementId) {
       const isDark = toggleButton.checked;
       document.body.classList.toggle('dark-theme', isDark);
       document.body.classList.toggle('light-theme', !isDark);
-    });
-  
-    // Hamburger toggle
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
     });
   });

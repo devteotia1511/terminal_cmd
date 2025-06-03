@@ -6,36 +6,19 @@ body {
     color: #ffffff;
   }
   
-  /* HEADER STYLES */
+  /* HEADER */
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 15px 20px;
-    position: relative;
     background-color: #1f1f1f;
   }
   
   .logo {
     font-size: 1.8rem;
     margin: 0;
-  }
-  
-  /* NAVIGATION */
-  nav {
-    display: flex;
-    gap: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #90caf9;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
   }
   
   /* THEME SWITCH */
@@ -90,7 +73,7 @@ body {
     transform: translateX(26px);
   }
   
-  /* MARKDOWN SECTION */
+  /* MAIN MARKDOWN */
   main {
     padding: 20px;
   }
@@ -113,9 +96,27 @@ body {
   
   /* FOOTER */
   footer {
-    background-color: #1f1f1f;
+    background-color: #d5d5d5;
     padding: 20px;
     text-align: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+  
+  .footer-links a {
+    color: #90caf9;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
   }
   
   /* DARK THEME */
@@ -130,10 +131,6 @@ body {
   
   body.dark-theme header h1 {
     color: rgb(40, 200, 147);
-  }
-  
-  body.dark-theme nav a {
-    color: #90caf9;
   }
   
   body.dark-theme pre,
@@ -156,10 +153,6 @@ body {
     color: rgb(144, 16, 4);
   }
   
-  body.light-theme nav a {
-    color: #1976d2;
-  }
-  
   body.light-theme .markdown-preview {
     background: #f5f5f5;
     color: #000;
@@ -176,6 +169,10 @@ body {
     color: #ffffff;
   }
   
+  body.light-theme .footer-links a {
+    color: #1976d2;
+  }
+  
   /* CODE BLOCKS */
   code, pre {
     white-space: pre-wrap;
@@ -188,37 +185,11 @@ body {
     border-radius: 6px;
   }
   
-  /* HAMBURGER MENU */
-  .hamburger {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    margin-left: auto;
-    color: white;
-  }
-  
+  /* RESPONSIVE */
   @media (max-width: 768px) {
-    .hamburger {
-      display: block;
-    }
-  
-    nav {
-      display: none;
+    header {
       flex-direction: column;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: inherit;
-      width: 100%;
-      padding: 10px 0;
-    }
-  
-    nav.show {
-      display: flex;
-    }
-  
-    nav a {
-      margin: 10px 20px;
+      align-items: flex-start;
     }
   
     .theme-switch-wrapper {
@@ -234,7 +205,7 @@ body {
       font-size: large;
     }
   
-    h1.logo {
+    .logo {
       font-size: 1.4rem !important;
     }
   
@@ -244,7 +215,7 @@ body {
   }
   
   @media (max-width: 480px) {
-    h1.logo {
+    .logo {
       font-size: 1.2rem !important;
     }
   
@@ -252,8 +223,10 @@ body {
       font-size: 1.1rem;
     }
   
-    nav a {
-      margin-left: 0;
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
     }
   
     #linkedin-btn {

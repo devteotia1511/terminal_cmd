@@ -9,48 +9,44 @@
 <body class="light-theme"> 
 
   <header>
-    <div class="header-left">
-      <h1 class="logo">CMD_PREVIEW</h1>
+    <h1 class="logo" style="font-size: x-small;">CMD_PREVIEW</h1>
+    <div class="theme-switch-wrapper">
+      <label>🌓</label>
+      <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
     </div>
-  
-    <div class="header-right">
-      <div class="hamburger" id="hamburger" style="color: rgb(144, 16, 4)">&#9776;</div>
-  
-      <div class="theme-switch-wrapper">
-        <label>🌓</label>
-        <label class="theme-switch">
-          <input type="checkbox" id="theme-toggle">
-          <span class="slider"></span>
-        </label>
-      </div>
-    </div>
-  
-    <!-- Nav Bar -->
-    <nav id="nav-links">
-      <a href="https://git-scm.com/docs" target="_blank">Git Docs</a>
-      <a href="https://learn.microsoft.com/en-us/windows/terminal/" target="_blank">Terminal Guide</a>
-      <a href="https://docs.github.com/en" target="_blank">GitHub Docs</a>
-    </nav>
   </header>
-
+  
   <main>
     <div>
-      <h1 style="font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;">COMMAND PREVIEW</h1>
+      <h1 style="font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;">
+        COMMAND PREVIEW
+      </h1>
     </div>
     <div class="markdown-preview" id="github-shell-wrapper">
       <div class="markdown-preview" id="github-preview">
         <h2>📘 GITHUB.md</h2>
         <div id="github-content">Loading...</div>
       </div>
-
+  
       <div class="markdown-preview" id="shell-preview">
         <h2>🖥️ Shell.md</h2>
         <div id="shell-content">Loading...</div>
       </div>
     </div>
   </main>
-
+  
   <footer>
+    <!-- New Link Section -->
+    <div class="footer-links">
+      <a href="https://git-scm.com/docs" target="_blank">Git Docs</a>
+      <a href="https://learn.microsoft.com/en-us/windows/terminal/" target="_blank">Terminal Guide</a>
+      <a href="https://docs.github.com/en" target="_blank">GitHub Docs</a>
+    </div>
+  
+    <!-- Existing LinkedIn Button -->
     <a href="https://www.linkedin.com/in/dev-teotia-62297928b/" target="_blank" id="linkedin-btn" style="
         display: inline-flex;
         align-items: center;
@@ -64,7 +60,8 @@
         style="width: 20px; height: 20px; filter: invert(1);" />
       <span>Connect on LinkedIn</span>
     </a>
-    <p style=" font-family: monospace; font-size: xx-large; color: rgb(0, 207, 138);">Happy Learning!</p>
+  
+    <p style="font-family: monospace; font-size: xx-large; color: rgb(144, 16, 4);">Happy Learning!</p>
   </footer>
 
   <!-- Libraries -->
