@@ -1,4 +1,4 @@
-# --- GIT & GITHUB ---
+# -- GIT & GITHUB --
 
 
 ## Git bash set username and useremail command
