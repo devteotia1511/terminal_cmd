@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Markdown Preview</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-theme"> <!-- Start in light mode -->
+
+  <header>
+    <h1 class="logo">CMD_PREVIEW</h1>
+    <nav>
+      <a href="https://git-scm.com/docs" target="_blank">Git Docs</a>
+      <a href="https://learn.microsoft.com/en-us/windows/terminal/" target="_blank">Terminal Guide</a>
+      <a href="https://docs.github.com/en" target="_blank">GitHub Docs</a>
+    </nav>
+    <div class="theme-switch-wrapper">
+        <label>🌓</label>
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+  </header>
+
+  <main>
+    <div class="markdown-preview" id="github-shell-wrapper">
+      <div class="markdown-preview" id="github-preview">
+        <h2>📘 GITHUB.md</h2>
+        <div id="github-content">Loading...</div>
+      </div>
+
+      <div class="markdown-preview" id="shell-preview">
+        <h2>🖥️ Shell.md</h2>
+        <div id="shell-content">Loading...</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/dev-teotia-62297928b/" target="_blank" id="linkedin-btn" style="
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        background-color: #0077b5;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"
+        style="width: 20px; height: 20px; filter: invert(1);" />
+      <span>Connect on LinkedIn</span>
+    </a>
+    <p style=" font-family: monospace; font-size: xx-large; color: rgb(0, 207, 138);">Happy Learning!</p>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
