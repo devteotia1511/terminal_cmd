@@ -6,25 +6,32 @@
   <title>Markdown Preview</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="light-theme"> <!-- Start in light mode -->
+<body class="light-theme"> 
 
   <header>
     <h1 class="logo">CMD_PREVIEW</h1>
-    <nav>
+    <div class="hamburger" id="hamburger">&#8942;</div>
+
+    <nav id="nav-links">
       <a href="https://git-scm.com/docs" target="_blank">Git Docs</a>
       <a href="https://learn.microsoft.com/en-us/windows/terminal/" target="_blank">Terminal Guide</a>
       <a href="https://docs.github.com/en" target="_blank">GitHub Docs</a>
     </nav>
+  
+    <!-- Theme Toggle -->
     <div class="theme-switch-wrapper">
-        <label>🌓</label>
-        <label class="theme-switch">
-            <input type="checkbox" id="theme-toggle">
-            <span class="slider"></span>
-        </label>
+      <label>🌓</label>
+      <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
     </div>
   </header>
 
   <main>
+    <div>
+      <h1 style="font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;">COMMAND PREVIEW</h1>
+    </div>
     <div class="markdown-preview" id="github-shell-wrapper">
       <div class="markdown-preview" id="github-preview">
         <h2>📘 GITHUB.md</h2>

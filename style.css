@@ -140,3 +140,158 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(26px);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .theme-switch-wrapper {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .markdown-preview {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: large;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    .theme-switch-wrapper {
+        margin-left: 0;
+    }
+
+    .markdown-preview h2 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    #linkedin-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    #linkedin-btn span {
+        display: none;
+    }
+}
+
+.markdown-preview {
+    overflow-x: auto;
+    word-wrap: break-word;
+  }
+  
+  code, pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  
+  pre {
+    background-color: #1e1e1e;
+    padding: 1em;
+    overflow-x: auto;
+    border-radius: 6px;
+  }
+  
+  /* Responsive Markdown & Heading Scaling */
+  @media (max-width: 768px) {
+    .markdown-preview h2 {
+      font-size: 1.3rem;
+    }
+    h1.logo {
+      font-size: 1.4rem !important;
+    }
+    main {
+      padding: 10px;
+    }
+    .markdown-preview {
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1.logo {
+      font-size: 1.2rem !important;
+    }
+    .markdown-preview h2 {
+      font-size: 1.1rem;
+    }
+  }
+
+  /* Hamburger menu styles */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    margin-left: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #1f1f1f;
+      padding: 10px 0;
+    }
+  
+    nav.show {
+      display: flex;
+    }
+  
+    nav a {
+      margin: 10px 20px;
+    }
+  
+    .theme-switch-wrapper {
+      margin-top: 10px;
+      align-self: flex-end;
+    }
+  }
+
+  /* Light Theme Code Styling */
+body.light-theme pre,
+body.light-theme code {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Optional: tweak border-radius for light mode as well */
+body.light-theme pre {
+  border-radius: 6px;
+  padding: 1em;
+}

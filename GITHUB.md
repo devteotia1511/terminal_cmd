@@ -1,8 +1,5 @@
-# --- Git & Github ---
+# --- GIT & GITHUB ---
 
-```
-[Track](Track.png)
-```
 
 ## Git bash set username and useremail command
 
